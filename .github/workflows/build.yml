@@ -9,3 +9,4 @@ jobs:
         with:
           java-version: '11'
       - run: ./gradlew clean build
+      - run: find . -name '*.txt' | xargs -r file
